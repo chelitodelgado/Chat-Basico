@@ -1,0 +1,21 @@
+<h1>Mensajes</h1>
+<hr>
+
+<div class="card">
+  <div class="card-header">Chat en tiempo real</div>
+  <div id="chatMensaje" class="card-body">
+    <li *ngFor="let items of mensajes" class="list-group">
+      <div *ngIf="items">
+        Anonimo dice: {{items.cuerpo}}
+      </div>
+    </li>
+  </div>
+</div>
+<br>
+<form (ngSubmit)="enviar()">
+
+  <input type="text" [(ngModel)]="texto" class="form-control" name="texto" placeholder="Mensaje..." autofocus
+    autocomplete="off">
+
+</form>
+<br>
