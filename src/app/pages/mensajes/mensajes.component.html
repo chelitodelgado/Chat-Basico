@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Curso Socket en angular</a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+    <div class="mx-auto">
+      <p class="lead text-white">Usuario: <small>{{ wsService.usuario.nombre }}</small></p>
+    </div>
+
+  </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <app-lista-usuarios></app-lista-usuarios>
+        </div>
+        <div class="col-6">
+            <app-chat></app-chat>
+        </div>
+    </div>
+</div>
