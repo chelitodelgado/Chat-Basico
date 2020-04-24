@@ -6,20 +6,20 @@
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavId">
 
-    <div class="mx-auto">
-      <p class="lead text-white">Usuario: <small>{{ wsService.usuario.nombre }}</small></p>
-    </div>
-
   </div>
+ <div class="mx-3">
+    <p class="lead text-white">Usuario: <small>{{ wsService.usuario.nombre }} </small> </p>
+ </div>
+    <button class="btn btn-danger" (click)="salir()">Logout</button>
 </nav>
 
 <div class="container">
-    <div class="row">
-        <div class="col-6">
-            <app-lista-usuarios></app-lista-usuarios>
-        </div>
-        <div class="col-6">
-            <app-chat></app-chat>
-        </div>
+  <div class="row">
+    <div class="col-6">
+      <app-lista-usuarios></app-lista-usuarios>
     </div>
+    <div class="col-6">
+      <app-chat></app-chat>
+    </div>
+  </div>
 </div>
