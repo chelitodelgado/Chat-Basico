@@ -5,6 +5,11 @@
     <hr>
     <form class="p-4" (ngSubmit)="ingresar()">
       <input type="text" [(ngModel)]="nombre" name="nombre" class="form-control" placeholder="Nombre" autofocus> <br>
+      <select name="sala" class="form-control" multiple>
+      	<option value="All">Todos contra todos</option>
+      	<option value="Anonima">Anonima</option>
+      	option
+      </select>
       <button [disabled]="nombre.trim().length===0" class="form-control btn btn-primary mb-3">Ingresar</button>
     </form>
   </div>
